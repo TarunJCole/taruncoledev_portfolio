@@ -11,6 +11,7 @@ const Layout = props => {
 		<>
 			<Head>
 				<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+				<title>{`${props.title} | TC Web Services`}</title>
 			</Head>
 			<Navbar />
 			{props.children}

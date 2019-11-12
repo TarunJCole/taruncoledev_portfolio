@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -8,6 +9,9 @@ import theme from "../theme/theme";
 const Layout = props => {
 	return (
 		<>
+			<Head>
+				<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+			</Head>
 			<Navbar />
 			{props.children}
 			<p>

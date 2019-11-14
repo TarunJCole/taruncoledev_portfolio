@@ -3,14 +3,14 @@ const theme = {
 		dark: "#2b2b2b",
 		light: "#fafafa",
 		primary: {
-			main: "#1a237e",
-			light: "#534bae",
-			dark: "#000051"
+			main: "#7e57c2",
+			light: "#b085f5",
+			dark: "#4d2c91"
 		},
 		secondary: {
-			main: "#ffa000",
-			light: "#ffd149",
-			dark: "#c67100"
+			main: "#e3f2fd",
+			light: "#fff",
+			dark: "#b1bfca"
 		}
 	}
 };

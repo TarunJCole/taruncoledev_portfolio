@@ -14,14 +14,21 @@ const Sidebar = props => {
 	return (
 		<nav className="sidebar disabled">
 			<ul>
-				<li>Stuff</li>
-				<li>Stuff</li>
-				<li>Stuff</li>
-				<li>Stuff</li>
+				<li>Home</li>
+				<li>Projects</li>
+				<li>Contact</li>
+				<li>About Me</li>
+			</ul>
+			<ul>
+				<li>Github</li>
 			</ul>
 			<style jsx>
 				{`
 					nav {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
 						position: fixed;
 						top: 0;
 						right: 0;
@@ -38,6 +45,30 @@ const Sidebar = props => {
 						text-transform: uppercase;
 						font-weight: bold;
 						font-size: 1.5rem;
+					}
+
+					ul li {
+						margin: 2rem 0;
+						text-align: center;
+						transition: color 0.2s ease-in-out;
+						cursor: pointer;
+					}
+
+					ul li::after {
+						content: "";
+						display: block;
+						width: 0;
+						height: 2px;
+						background: ${theme.colors.primary.light};
+						transition: width 0.2s ease;
+					}
+
+					ul li:hover {
+						color: ${theme.colors.primary.light};
+					}
+
+					ul li:hover::after {
+						width: 100%;
 					}
 				`}
 			</style>

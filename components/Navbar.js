@@ -1,20 +1,17 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 
-import Sidebar from "./Sidebar";
-
 import theme from "../theme/theme";
 
-const Navbar = () => {
+const Navbar = props => {
 	return (
 		<header>
-			<Sidebar />
 			<div className="nav-title">
 				<a onClick={() => scroll.scrollToTop()} aria-label="Scroll To Top">
 					TC
 				</a>
 			</div>
-			<div className="hamburger">
+			<div className="hamburger" onClick={() => props.toggleSidebar(!props.displaySidebar)}>
 				<div className="hamburger-line"></div>
 				<div className="hamburger-line"></div>
 				<div className="hamburger-line"></div>
@@ -30,7 +27,7 @@ const Navbar = () => {
 						position: fixed;
 						top: 0;
 						left: 0;
-						z-index: 100;
+						z-index: 200;
 					}
 
 					.nav-title {

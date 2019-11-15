@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import theme from "../theme/theme";
 
-const Sidebar = () => {
+const Sidebar = props => {
+	useEffect(() => {
+		if (props.displaySidebar) {
+			document.querySelector(".sidebar").classList.remove("disabled");
+		} else {
+			document.querySelector(".sidebar").classList.add("disabled");
+		}
+	});
+
 	return (
-		<nav>
+		<nav className="sidebar disabled">
 			<ul>
 				<li>Stuff</li>
 				<li>Stuff</li>
@@ -22,6 +30,7 @@ const Sidebar = () => {
 						width: 25%;
 						min-width: 320px;
 						z-index: 100;
+						transition: opacity 0.2s ease-in-out;
 					}
 
 					ul {

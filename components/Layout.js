@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Overlay from "./Overlay";
+import Sidebar from "./Sidebar";
 
 import theme from "../theme/theme";
 
 const Layout = props => {
+	const [displaySidebar, setDisplaySidebar] = useState(false);
+
+	useEffect(() => {
+		console.log(displaySidebar);
+	});
+
 	return (
 		<>
 			<Head>
 				<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 				<title>{`${props.title} | TC Web Services`}</title>
 			</Head>
-			<Navbar />
-			<Overlay />
+			<Navbar toggleSidebar={setDisplaySidebar} displaySidebar={displaySidebar} />
+			<Sidebar displaySidebar={displaySidebar} />
+			<Overlay displaySidebar={displaySidebar} />
 			{props.children}
 			<Footer />
 			<style jsx global>
@@ -36,7 +44,7 @@ const Layout = props => {
 						font-size: 16px;
 						font-weight: 400;
 						line-height: 1.6;
-						color: #2b2b2b;
+						color: ${theme.colors.dark};
 						scroll-behaviour: smooth;
 						min-height: 100%;
 						min-width: 320px;
@@ -56,6 +64,10 @@ const Layout = props => {
 					}
 					ul {
 						list-style: none;
+					}
+					.disabled {
+						opacity: 0 !important;
+						pointer-events: none;
 					}
 				`}
 			</style>

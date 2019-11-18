@@ -41,6 +41,7 @@ const Sidebar = props => {
 					}
 
 					ul {
+						padding: 0;
 						color: ${theme.colors.light};
 						text-transform: uppercase;
 						font-weight: bold;

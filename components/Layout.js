@@ -51,8 +51,10 @@ const Layout = props => {
 					}
 					h1,
 					h2,
-					h3 {
+					h3,
+					.serif {
 						font-family: "Crete Round", serif;
+						margin-top: 0;
 					}
 					a {
 						text-decoration: none;
@@ -64,6 +66,10 @@ const Layout = props => {
 					}
 					ul {
 						list-style: none;
+					}
+					.container {
+						max-width: 1200px;
+						margin: 0 auto;
 					}
 					.disabled {
 						opacity: 0 !important;

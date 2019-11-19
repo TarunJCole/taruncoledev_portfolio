@@ -13,10 +13,10 @@ const Landing = () => {
 					Web Developer
 				</h1>
 				<div className="title-links">
-					<ScrollLink to="paragraph" smooth={true}>
+					<ScrollLink to="projects" smooth={true}>
 						<span className="btn">See Projects</span>
 					</ScrollLink>
-					<ScrollLink to="list" smooth={true}>
+					<ScrollLink to="contact" smooth={true}>
 						<span className="btn">Contact Me</span>
 					</ScrollLink>
 				</div>

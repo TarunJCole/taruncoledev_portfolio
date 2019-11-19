@@ -7,7 +7,7 @@ const Navbar = props => {
 	return (
 		<header>
 			<div className="nav-title">
-				<a onClick={() => scroll.scrollToTop()} aria-label="Scroll To Top">
+				<a onClick={() => scroll.scrollToTop()} aria-label="Scroll To Top" className="serif">
 					TC
 				</a>
 			</div>
@@ -37,7 +37,7 @@ const Navbar = props => {
 						font-size: 2rem;
 						width: 60px;
 						height: 60px;
-						background: ${theme.colors.secondary.main};
+						background: ${theme.colors.secondary.light};
 						border-radius: 50%;
 						transition: background 0.2s ease-in-out;
 					}
@@ -50,7 +50,7 @@ const Navbar = props => {
 						cursor: pointer;
 						width: 60px;
 						height: 60px;
-						background: ${theme.colors.secondary.main};
+						background: ${theme.colors.secondary.light};
 						border-radius: 50%;
 						transition: background 0.2s ease-in-out;
 						z-index: 100;

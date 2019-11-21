@@ -15,7 +15,9 @@ const Index = () => {
 				<section id="projects" className="page">
 					<div className="container">
 						<h2>My Projects</h2>
-						<ProjectCard />
+						{projects.map(project => (
+							<ProjectCard project={project} />
+						))}
 					</div>
 				</section>
 			</div>

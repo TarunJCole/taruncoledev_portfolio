@@ -8,12 +8,12 @@ import theme from "../theme/theme";
 const ProjectCard = props => {
 	return (
 		<div className="card">
-			<div className="card-img">img</div>
+			<div className="card-img"></div>
 			<div className="card-text">
-				<h3>{props.title}</h3>
-				<div>{props.desc}</div>
+				<h3>{props.project.title}</h3>
+				<div>{props.project.description}</div>
 				<div className="right">
-					<a href={props.liveUrl} className="liveBtn">
+					<a href={props.project.liveUrl} className="liveBtn">
 						<IconContext.Provider
 							value={{
 								style: { verticalAlign: "middle", fontSize: "1.5rem", margin: "0 3px 3px 0" }
@@ -25,7 +25,7 @@ const ProjectCard = props => {
 						</IconContext.Provider>{" "}
 						Live
 					</a>
-					<a href={props.codeUrl} className="codeBtn">
+					<a href={props.project.codeUrl} className="codeBtn">
 						<IconContext.Provider
 							value={{
 								style: { verticalAlign: "middle", fontSize: "1.5rem", margin: "0 3px 3px 0" }
@@ -44,14 +44,18 @@ const ProjectCard = props => {
 					.card {
 						display: grid;
 						grid-template-columns: auto 1fr;
-						box-shadow: 10px 10px 10px -6px rgba(150, 150, 150, 0.67);
+						box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
 						background: #fdfdfd;
+						border-radius: 10px;
+						margin-bottom: 4rem;
 					}
 
 					.card-img {
 						width: 320px;
 						height: 180px;
 						border-right: 3px solid ${theme.colors.primary.main};
+						background: url(${props.project.image}) no-repeat center center/cover;
+						border-radius: 10px 0 0 10px;
 					}
 
 					.card-text {

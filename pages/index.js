@@ -5,6 +5,7 @@ import Landing from "../components/Landing";
 import ProjectCard from "../components/ProjectCard";
 
 import theme from "../theme/theme";
+import projects from "../res/projectInfo";
 
 const Index = () => {
 	return (

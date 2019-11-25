@@ -53,7 +53,6 @@ const ProjectCard = props => {
 					.card-img {
 						width: 320px;
 						height: 180px;
-						border-right: 3px solid ${theme.colors.primary.main};
 						background: url(${props.project.image}) no-repeat center center/cover;
 						border-radius: 10px 0 0 10px;
 					}

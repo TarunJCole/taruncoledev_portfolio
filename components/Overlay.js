@@ -25,6 +25,7 @@ const Overlay = props => {
 						opacity: 0.25;
 						z-index: 50;
 						transition: opacity 0.5s ease;
+						overflow: hidden;
 					}
 				`}
 			</style>

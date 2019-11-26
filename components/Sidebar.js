@@ -15,9 +15,9 @@ const Sidebar = props => {
 		<nav className="sidebar disabled">
 			<ul>
 				<li>Home</li>
+				<li>About Me</li>
 				<li>Projects</li>
 				<li>Contact</li>
-				<li>About Me</li>
 			</ul>
 			<ul>
 				<li>Github</li>

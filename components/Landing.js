@@ -27,7 +27,6 @@ const Landing = () => {
 						min-height: 100vh;
 						display: flex;
 						align-items: center;
-						background: ${theme.colors.light};
 					}
 
 					.title-area {

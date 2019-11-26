@@ -45,6 +45,7 @@ const Layout = props => {
 						font-weight: 400;
 						line-height: 1.6;
 						color: ${theme.colors.dark};
+						background: ${theme.colors.background};
 						scroll-behaviour: smooth;
 						min-height: 100%;
 						min-width: 320px;

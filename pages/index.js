@@ -60,10 +60,10 @@ const Index = () => {
 					}
 
 					.page {
-						width: 100vw;
+						max-width: 100vw;
 						min-height: 100vh;
-						background: ${theme.colors.light};
-						border: 1px solid rebeccapurple;
+						background: ${theme.colors.background};
+						margin: 15% 0;
 					}
 
 					#projects .container {
@@ -110,6 +110,7 @@ const Index = () => {
 						border: none;
 						cursor: pointer;
 						transition: background 0.2s ease-in-out;
+						border-radius: 50px;
 					}
 
 					#contact-form .submit-btn:hover {

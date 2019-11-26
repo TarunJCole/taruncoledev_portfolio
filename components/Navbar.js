@@ -37,7 +37,7 @@ const Navbar = props => {
 						font-size: 2rem;
 						width: 60px;
 						height: 60px;
-						background: ${theme.colors.secondary.light};
+						background: transparent;
 						border-radius: 50%;
 						transition: background 0.2s ease-in-out;
 					}

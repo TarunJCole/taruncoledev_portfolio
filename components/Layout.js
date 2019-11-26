@@ -67,6 +67,10 @@ const Layout = props => {
 					ul {
 						list-style: none;
 					}
+					input,
+					textarea {
+						font-family: "Rubik", sans-serif;
+					}
 					.container {
 						max-width: 1200px;
 						margin: 0 auto;

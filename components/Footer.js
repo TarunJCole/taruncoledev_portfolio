@@ -1,11 +1,15 @@
 import React from "react";
 
+import theme from "../theme/theme";
+
 const Footer = () => {
 	return (
 		<footer>
-			<div>a</div>
-			<div>b</div>
-			<div>c</div>
+			<div>
+				<a href="mailto:tarun@tcwebservices.co.uk">tarun@tcwebservices.co.uk</a>
+			</div>
+			<div>&copy; tcwebservices 2019-2020</div>
+			<div></div>
 			<style jsx>
 				{`
 					footer {
@@ -13,6 +17,8 @@ const Footer = () => {
 						grid-template-columns: repeat(3, 1fr);
 						align-items: center;
 						justify-content: center;
+						font-weight: bold;
+						color: ${theme.colors.primary.dark};
 					}
 
 					footer div {

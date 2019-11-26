@@ -47,7 +47,7 @@ const ProjectCard = props => {
 						box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
 						background: #fdfdfd;
 						border-radius: 10px;
-						margin-bottom: 4rem;
+						margin: 4rem 0;
 					}
 
 					.card-img {

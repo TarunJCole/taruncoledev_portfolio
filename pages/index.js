@@ -95,10 +95,9 @@ const Index = () => {
 						outline: none;
 					}
 
-					 {
-						/* #contact-form .form-field:focus {
-						background: white;
-					} */
+					#contact-form textarea.form-field {
+						border-bottom: none;
+						background: #b2dfdb;
 					}
 
 					#contact-form .submit-btn {

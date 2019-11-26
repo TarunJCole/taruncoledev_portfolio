@@ -12,6 +12,9 @@ const Index = () => {
 		<Layout title="Home">
 			<Landing />
 			<div>
+				<section id="about" className="page">
+					<h2>About Section</h2>
+				</section>
 				<section id="projects" className="page">
 					<div className="container">
 						<h2>My Projects</h2>

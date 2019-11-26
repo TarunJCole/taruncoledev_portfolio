@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 import theme from "../theme/theme";
 
@@ -14,13 +15,31 @@ const Sidebar = props => {
 	return (
 		<nav className="sidebar disabled">
 			<ul>
-				<li>Home</li>
-				<li>About Me</li>
-				<li>Projects</li>
-				<li>Contact</li>
+				<li>
+					<ScrollLink to="__next" smooth={true}>
+						<span>Home</span>
+					</ScrollLink>
+				</li>
+				<li>
+					<ScrollLink to="about" smooth={true}>
+						<span>About Me</span>
+					</ScrollLink>
+				</li>
+				<li>
+					<ScrollLink to="projects" smooth={true}>
+						<span>Projects</span>
+					</ScrollLink>
+				</li>
+				<li>
+					<ScrollLink to="contact" smooth={true}>
+						<span>Contact</span>
+					</ScrollLink>
+				</li>
 			</ul>
 			<ul>
-				<li>Github</li>
+				<li>
+					<a href="https://github.com/TarunJCole">Github</a>
+				</li>
 			</ul>
 			<style jsx>
 				{`

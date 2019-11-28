@@ -11,10 +11,6 @@ import theme from "../theme/theme";
 const Layout = props => {
 	const [displaySidebar, setDisplaySidebar] = useState(false);
 
-	useEffect(() => {
-		console.log(displaySidebar);
-	});
-
 	return (
 		<>
 			<Head>

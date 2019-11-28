@@ -14,7 +14,6 @@ const Footer = () => {
 					Made with: <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
 					<img src="./nodejs-icon.svg" alt="Node Icon" className="icon" />
 					<img src="./expressjs-icon.svg" alt="Express Icon" className="icon" />
-					<img src="./zeit-icon.svg" alt="Next JS Icon" className="icon" />
 				</span>
 			</div>
 			<style jsx>

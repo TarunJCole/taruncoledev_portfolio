@@ -1,6 +1,4 @@
 import React from "react";
-import { IconContext } from "react-icons";
-import { FaReact, FaNodeJs } from "react-icons/fa";
 
 import theme from "../theme/theme";
 
@@ -12,11 +10,11 @@ const Footer = () => {
 			</div>
 			<div>&copy; tcwebservices 2019-2020</div>
 			<div>
-				<span>
-					Made with
-					<img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
+				<span className="icon-container">
+					Made with: <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
 					<img src="./nodejs-icon.svg" alt="Node Icon" className="icon" />
 					<img src="./expressjs-icon.svg" alt="Express Icon" className="icon" />
+					<img src="./zeit-icon.svg" alt="Next JS Icon" className="icon" />
 				</span>
 			</div>
 			<style jsx>
@@ -27,7 +25,8 @@ const Footer = () => {
 						align-items: center;
 						justify-content: center;
 						font-weight: bold;
-						color: ${theme.colors.primary.dark};
+						color: ${theme.colors.dark};
+						background: ${theme.colors.secondary.main};
 					}
 
 					footer div {
@@ -37,9 +36,20 @@ const Footer = () => {
 						padding: 3rem 2rem;
 					}
 
+					.icon-container {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+
 					img.icon {
+						margin: 0 0.25rem;
 						width: 24px;
 						height: 24px;
+					}
+
+					img.icon:first-child {
+						margin-left: 0.75rem;
 					}
 				`}
 			</style>

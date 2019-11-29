@@ -20,7 +20,7 @@ const Index = () => {
 					<div className="container">
 						<h2>My Projects</h2>
 						{projects.map(project => (
-							<ProjectCard project={project} />
+							<ProjectCard project={project} key={project.title} />
 						))}
 					</div>
 				</section>

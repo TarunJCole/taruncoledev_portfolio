@@ -15,7 +15,7 @@ export default class ContactForm extends Component {
 		this.setState({ [e.target.name]: e.target.value });
 	};
 
-	submitForm = data => {
+	onSubmitForm = data => {
 		fetch("/api/contact", {
 			method: "post",
 			headers: {
@@ -37,11 +37,12 @@ export default class ContactForm extends Component {
 						id="contact-form"
 						onSubmit={e => {
 							e.preventDefault();
-							this.submitForm({
+							this.onSubmitForm({
 								name: this.state.name,
 								email: this.state.email,
 								message: this.state.message
 							});
+							this.setState({ name: "", email: "", message: "" });
 						}}
 					>
 						<input

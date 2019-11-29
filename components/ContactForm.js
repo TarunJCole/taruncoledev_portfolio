@@ -8,7 +8,8 @@ export default class ContactForm extends Component {
 		submitted: false,
 		name: "",
 		email: "",
-		message: ""
+		message: "",
+		subject: ""
 	};
 
 	onInputChange = e => {
@@ -16,6 +17,10 @@ export default class ContactForm extends Component {
 	};
 
 	onSubmitForm = data => {
+		if (this.state.subject) {
+			this.setState({ name: "", email: "", message: "", subject: "" });
+			return;
+		}
 		fetch("/api/contact", {
 			method: "post",
 			headers: {
@@ -42,7 +47,7 @@ export default class ContactForm extends Component {
 								email: this.state.email,
 								message: this.state.message
 							});
-							this.setState({ name: "", email: "", message: "" });
+							this.setState({ name: "", email: "", message: "", subject: "" });
 						}}
 					>
 						<input
@@ -52,6 +57,7 @@ export default class ContactForm extends Component {
 							type="text"
 							name="name"
 							placeholder="What is your name?"
+							required
 						/>
 						<input
 							onChange={this.onInputChange}
@@ -60,6 +66,16 @@ export default class ContactForm extends Component {
 							type="email"
 							name="email"
 							placeholder="What is your email address?"
+							required
+						/>
+						<input
+							onChange={this.onInputChange}
+							value={this.state.subject}
+							type="text"
+							name="subject"
+							placeholder="Subject"
+							className="hp"
+							autoComplete="off"
 						/>
 						<textarea
 							onChange={this.onInputChange}
@@ -69,6 +85,7 @@ export default class ContactForm extends Component {
 							cols="30"
 							rows="10"
 							placeholder="What would you like to talk about?"
+							required
 						></textarea>
 						<input className="submit-btn" type="submit" value="Send" />
 					</form>
@@ -86,6 +103,16 @@ export default class ContactForm extends Component {
 							min-height: 100vh;
 							background: ${theme.colors.background};
 							margin: 15% 0;
+						}
+
+						.hp {
+							opacity: 0;
+							position: absolute;
+							top: 0;
+							left: 0;
+							height: 0;
+							width: 0;
+							z-index: -100;
 						}
 
 						#contact .container {

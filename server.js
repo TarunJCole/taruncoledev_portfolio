@@ -6,6 +6,8 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+const mailer = require("./mailer");
+
 app.prepare().then(() => {
 	const server = express();
 
@@ -16,9 +18,17 @@ app.prepare().then(() => {
 	});
 
 	server.post("/api/contact", (req, res) => {
-		const { email, name, message } = req.body;
-		console.log(req.body);
-		res.send("success");
+		const { email = "", name = "", message = "" } = req.body;
+
+		mailer({ email, name, text: message })
+			.then(() => {
+				console.log("Mail Sent");
+				res.send("success");
+			})
+			.catch(err => {
+				console.log("Mail not sent", err);
+				res.send("failure");
+			});
 	});
 
 	server.listen(3000, err => {

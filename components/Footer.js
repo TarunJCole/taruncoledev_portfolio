@@ -6,12 +6,12 @@ const Footer = () => {
 	return (
 		<footer>
 			<div>
-				<a href="mailto:tarun@tcwebservices.co.uk">tarun@tcwebservices.co.uk</a>
+				<a href="mailto:tarun@tcwebservices.co.uk">Tarun@tcwebservices.co.uk</a>
 			</div>
-			<div>&copy; tcwebservices 2019-2020</div>
+			<div>TC Web Services &copy; 2019-2020</div>
 			<div>
 				<span className="icon-container">
-					Made with: <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
+					Made with <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
 					<img src="./nodejs-icon.svg" alt="Node Icon" className="icon" />
 					<img src="./expressjs-icon.svg" alt="Express Icon" className="icon" />
 				</span>
@@ -20,10 +20,11 @@ const Footer = () => {
 				{`
 					footer {
 						display: grid;
+						padding: 0 20%;
 						grid-template-columns: repeat(3, 1fr);
 						align-items: center;
 						justify-content: center;
-						font-weight: bold;
+						font-size: 0.9rem;
 						color: ${theme.colors.dark};
 						background: ${theme.colors.secondary.main};
 					}
@@ -43,8 +44,8 @@ const Footer = () => {
 
 					img.icon {
 						margin: 0 0.25rem;
-						width: 24px;
-						height: 24px;
+						width: 16px;
+						height: 16px;
 					}
 
 					img.icon:first-child {

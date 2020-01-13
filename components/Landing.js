@@ -30,7 +30,7 @@ const Landing = () => {
 					}
 
 					.title-area {
-						margin-left: 20%;
+						margin-left: 15%;
 					}
 
 					.title-area h1 {
@@ -40,8 +40,8 @@ const Landing = () => {
 					span.btn {
 						padding: 1rem 2rem;
 						border-radius: 40px;
-						background: ${theme.colors.dark};
-						color: ${theme.colors.light};
+						background: ${theme.colors.light};
+						color: ${theme.colors.dark};
 						transition: background 0.2s ease-in-out;
 					}
 
@@ -50,7 +50,7 @@ const Landing = () => {
 					}
 
 					span.btn:hover {
-						background: ${theme.colors.primary.dark};
+						background: ${theme.colors.primary.light};
 					}
 				`}
 			</style>

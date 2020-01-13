@@ -13,9 +13,6 @@ const Index = () => {
 		<Layout title="Home">
 			<Landing />
 			<div>
-				<section id="about" className="page">
-					<h2>About Section</h2>
-				</section>
 				<section id="projects" className="page">
 					<div className="container">
 						<h2>My Projects</h2>
@@ -38,7 +35,7 @@ const Index = () => {
 						max-width: 100vw;
 						min-height: 100vh;
 						background: ${theme.colors.background};
-						margin: 15% 0;
+						margin: 5% 0;
 					}
 
 					#projects .container {

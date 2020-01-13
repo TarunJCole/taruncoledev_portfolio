@@ -24,7 +24,7 @@ const Layout = props => {
 			<Footer />
 			<style jsx global>
 				{`
-					@import url("https://fonts.googleapis.com/css?family=Crete+Round|Rubik&display=swap");
+					@import url("https://fonts.googleapis.com/css?family=Lalezar|Rubik&display=swap");
 					html {
 						box-sizing: border-box;
 					}
@@ -40,7 +40,7 @@ const Layout = props => {
 						font-size: 16px;
 						font-weight: 400;
 						line-height: 1.6;
-						color: ${theme.colors.dark};
+						color: ${theme.colors.light};
 						background: ${theme.colors.background};
 						scroll-behaviour: smooth;
 						min-height: 100%;
@@ -49,9 +49,15 @@ const Layout = props => {
 					h1,
 					h2,
 					h3,
-					.serif {
-						font-family: "Crete Round", serif;
-						margin-top: 0;
+					.title-font {
+						font-weight: normal;
+						font-family: "Lalezar", sans-serif;
+					}
+					h1 {
+						font-size: 5rem;
+					}
+					h2 {
+						font-size: 3.5rem;
 					}
 					a {
 						text-decoration: none;

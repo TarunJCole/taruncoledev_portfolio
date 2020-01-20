@@ -33,10 +33,6 @@ const Landing = () => {
 						margin-left: 15%;
 					}
 
-					.title-area h1 {
-						font-size: 4rem;
-					}
-
 					span.btn {
 						padding: 1rem 2rem;
 						border-radius: 40px;

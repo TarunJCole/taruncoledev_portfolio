@@ -7,7 +7,7 @@ const Navbar = props => {
 	return (
 		<header>
 			<div className="nav-title">
-				<a onClick={() => scroll.scrollToTop()} aria-label="Scroll To Top" className="serif">
+				<a onClick={() => scroll.scrollToTop()} aria-label="Scroll To Top" className="title-font">
 					TC
 				</a>
 			</div>
@@ -34,12 +34,8 @@ const Navbar = props => {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						font-size: 2rem;
-						width: 60px;
-						height: 60px;
-						background: transparent;
-						border-radius: 50%;
-						transition: background 0.2s ease-in-out;
+						font-size: 2.5rem;
+						transition: color 0.2s ease-in-out;
 					}
 
 					.hamburger {
@@ -58,7 +54,7 @@ const Navbar = props => {
 
 					.nav-title:hover,
 					.hamburger:hover {
-						background: ${theme.colors.primary.light};
+						color: ${theme.colors.primary.light};
 					}
 
 					.hamburger-line {

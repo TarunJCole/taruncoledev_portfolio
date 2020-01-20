@@ -8,7 +8,7 @@ const Footer = () => {
 			<div>
 				<a href="mailto:tarun@tcwebservices.co.uk">Tarun@tcwebservices.co.uk</a>
 			</div>
-			<div>TC Web Services &copy; 2019-2020</div>
+			<div>TC Web Services &copy; 2020</div>
 			<div>
 				<span className="icon-container">
 					Made with <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />

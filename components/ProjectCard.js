@@ -13,7 +13,7 @@ const ProjectCard = props => {
 				<h3>{props.project.title}</h3>
 				<div>{props.project.description}</div>
 				<div className="right">
-					<a href={props.project.liveUrl} className="liveBtn">
+					<a href={props.project.liveUrl} className="cardBtn">
 						<IconContext.Provider
 							value={{
 								style: { verticalAlign: "middle", fontSize: "1.5rem", margin: "0 3px 3px 0" }
@@ -25,7 +25,7 @@ const ProjectCard = props => {
 						</IconContext.Provider>{" "}
 						Live
 					</a>
-					<a href={props.project.codeUrl} className="codeBtn">
+					<a href={props.project.codeUrl} className="cardBtn">
 						<IconContext.Provider
 							value={{
 								style: { verticalAlign: "middle", fontSize: "1.5rem", margin: "0 3px 3px 0" }
@@ -44,8 +44,7 @@ const ProjectCard = props => {
 					.card {
 						display: grid;
 						grid-template-columns: auto 1fr;
-						box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
-						background: #fdfdfd;
+						background: none;
 						border-radius: 10px;
 						margin: 4rem 0;
 					}
@@ -77,25 +76,13 @@ const ProjectCard = props => {
 					a {
 						padding: 1rem 2rem;
 						border-radius: 40px;
-						background: ${theme.colors.dark};
-						color: ${theme.colors.light};
+						background: ${theme.colors.light};
+						color: ${theme.colors.dark};
 						transition: background 0.2s ease-in-out;
 					}
 
-					.liveBtn {
-						background: ${theme.colors.primary.main};
-					}
-
-					.codeBtn {
-						background: ${theme.colors.secondary.main};
-					}
-
-					.liveBtn:hover {
-						background: ${theme.colors.primary.dark};
-					}
-
-					.codeBtn:hover {
-						background: ${theme.colors.secondary.dark};
+					a:hover {
+						background: ${theme.colors.primary.light};
 					}
 
 					a:first-child {

@@ -7,14 +7,14 @@ const projectInfo = [
 		codeUrl: "https://github.com/TarunJCole/coffee-website"
 	},
 	{
-		title: "Finance Website",
+		title: "Finance",
 		description: "An example finance website built with React, Node and NextJS.",
 		image: "./finance.png",
 		liveUrl: "https://finance-website-tcweb.herokuapp.com/",
 		codeUrl: "https://github.com/TarunJCole/finance-website"
 	},
 	{
-		title: "Smartphone Website",
+		title: "Product Page - Smartphone",
 		description: "Example website for a smartphone. Built With React, Node & GatsbyJS.",
 		image: "./phone.png",
 		liveUrl: "https://practical-booth-44e1cc.netlify.com",

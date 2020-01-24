@@ -26,9 +26,8 @@ const Index = () => {
 			<style jsx>
 				{`
 					h2 {
-						margin: 4rem 0;
-						font-size: 2.5rem;
-						text-align: center;
+						margin: 4rem 0 6rem 0;
+						font-size: 5rem;
 					}
 
 					.page {

@@ -13,7 +13,7 @@ const Footer = () => {
 				<span className="icon-container">
 					Made with <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
 					<img src="./nodejs-icon.svg" alt="Node Icon" className="icon" />
-					<img src="./expressjs-icon.svg" alt="Express Icon" className="icon" />
+					<img src="./zeit-icon.svg" alt="Express Icon" className="icon" />
 				</span>
 			</div>
 			<style jsx>
@@ -25,8 +25,8 @@ const Footer = () => {
 						align-items: center;
 						justify-content: center;
 						font-size: 0.9rem;
-						color: ${theme.colors.dark};
-						background: ${theme.colors.secondary.main};
+						color: ${theme.colors.light};
+						background: ${theme.colors.background};
 					}
 
 					footer div {
@@ -34,6 +34,11 @@ const Footer = () => {
 						align-items: center;
 						justify-content: center;
 						padding: 3rem 2rem;
+					}
+
+					a {
+						color: inherit;
+						text-decoration: none;
 					}
 
 					.icon-container {

@@ -37,7 +37,7 @@ export default class ContactForm extends Component {
 		return (
 			<section id="contact" className="page">
 				<div className="container">
-					<h2>Contact Me</h2>
+					<h2>CONTACT</h2>
 					<form
 						id="contact-form"
 						onSubmit={e => {
@@ -74,7 +74,7 @@ export default class ContactForm extends Component {
 							type="text"
 							name="subject"
 							placeholder="Subject"
-							className="hp"
+							className="sub"
 							autoComplete="off"
 						/>
 						<textarea
@@ -93,9 +93,8 @@ export default class ContactForm extends Component {
 				<style jsx>
 					{`
 						h2 {
-							margin: 4rem 0;
-							font-size: 2.5rem;
-							text-align: center;
+							margin: 4rem 0 6rem 0;
+							font-size: 5rem;
 						}
 
 						.page {
@@ -105,7 +104,7 @@ export default class ContactForm extends Component {
 							margin: 15% 0;
 						}
 
-						.hp {
+						.sub {
 							opacity: 0;
 							position: absolute;
 							top: 0;
@@ -134,22 +133,27 @@ export default class ContactForm extends Component {
 							padding-bottom: 0.5rem;
 							font-size: 1.2rem;
 							border: none;
-							border-bottom: 3px solid ${theme.colors.primary.dark};
+							border-bottom: 3px solid ${theme.colors.light};
 							background: inherit;
 							outline: none;
+							color: ${theme.colors.light};
+						}
+
+						#contact-form .form-field:focus {
+							border-bottom: 3px solid ${theme.colors.primary.light};
 						}
 
 						#contact-form textarea.form-field {
-							border-bottom: none;
-							background: #b2dfdb;
+							background: ${theme.colors.light};
+							color: ${theme.colors.dark};
 						}
 
 						#contact-form .submit-btn {
-							padding: 2rem;
+							padding: 1.5rem;
 							max-width: 33%;
 							margin-top: 1rem;
 							font-size: 1.2rem;
-							background: ${theme.colors.secondary.light};
+							background: ${theme.colors.light};
 							border: none;
 							cursor: pointer;
 							transition: background 0.2s ease-in-out;
@@ -157,7 +161,7 @@ export default class ContactForm extends Component {
 						}
 
 						#contact-form .submit-btn:hover {
-							background: ${theme.colors.secondary.main};
+							background: ${theme.colors.primary.light};
 						}
 					`}
 				</style>

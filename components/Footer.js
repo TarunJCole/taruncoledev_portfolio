@@ -39,6 +39,11 @@ const Footer = () => {
 					a {
 						color: inherit;
 						text-decoration: none;
+						transition: color 0.2s ease-in-out;
+					}
+
+					a:hover {
+						color: ${theme.colors.primary.light};
 					}
 
 					.icon-container {

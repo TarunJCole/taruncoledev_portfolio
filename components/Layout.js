@@ -40,7 +40,7 @@ const Layout = props => {
 						font-size: 16px;
 						font-weight: 400;
 						line-height: 1.6;
-						color: ${theme.colors.light};
+						color: ${theme.colors.dark};
 						background: ${theme.colors.background};
 						scroll-behaviour: smooth;
 						min-height: 100%;
@@ -73,6 +73,12 @@ const Layout = props => {
 					input,
 					textarea {
 						font-family: "Rubik", sans-serif;
+					}
+					.page {
+						max-width: 100vw;
+						min-height: 100vh;
+						background: ${theme.colors.background};
+						margin: 5% 0;
 					}
 					.container {
 						max-width: 1200px;

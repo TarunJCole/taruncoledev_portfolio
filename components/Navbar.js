@@ -1,6 +1,7 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 import theme from "../theme/theme";
 
@@ -15,30 +16,30 @@ const Navbar = props => {
 			<div className="nav-items title-font">
 				<ul>
 					<li>
-						<ScrollLink to="__next" smooth={true} aria-label="Scroll To Top">
-							<span>Home</span>
-						</ScrollLink>
+						<Link href="/">
+							<a aria-label="Home">Home</a>
+						</Link>
 					</li>
 					<li>
-						<ScrollLink to="about" smooth={true} aria-label="About Me">
-							<span>About Me</span>
-						</ScrollLink>
+						<Link href="/about">
+							<a aria-label="About Me">About Me</a>
+						</Link>
 					</li>
 					<li>
-						<ScrollLink to="projects" smooth={true} aria-label="Scroll To Projects">
-							<span>Projects</span>
-						</ScrollLink>
+						<Link href="/projects">
+							<a aria-label="Projects">Projects</a>
+						</Link>
 					</li>
 					<li>
-						<ScrollLink to="contact" smooth={true} aria-label="Scroll To Contact">
-							<span>Contact</span>
-						</ScrollLink>
+						<Link href="/contact">
+							<a aria-label="Contact">Contact</a>
+						</Link>
 					</li>
 				</ul>
 				<ul>
 					<li className="icon-container">
 						<a href="https://github.com/TarunJCole">
-							<img src="./GitHub-Mark-Light-64px.png" alt="Github Icon" />
+							<img src="./GitHub-Mark-64px.png" alt="Github Icon" />
 						</a>
 					</li>
 				</ul>

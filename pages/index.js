@@ -30,13 +30,6 @@ const Index = () => {
 						font-size: 5rem;
 					}
 
-					.page {
-						max-width: 100vw;
-						min-height: 100vh;
-						background: ${theme.colors.background};
-						margin: 5% 0;
-					}
-
 					#projects .container {
 						display: grid;
 						grid-template-columns: 1fr;

@@ -131,7 +131,7 @@ const Navbar = props => {
 
 					.nav-title:hover,
 					.hamburger:hover {
-						color: ${theme.colors.primary.light};
+						color: ${theme.colors.primary.maint};
 					}
 
 					.hamburger-line {

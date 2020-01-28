@@ -43,7 +43,7 @@ const Footer = () => {
 					}
 
 					a:hover {
-						color: ${theme.colors.primary.light};
+						color: ${theme.colors.primary.maint};
 					}
 
 					.icon-container {

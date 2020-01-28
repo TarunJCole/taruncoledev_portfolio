@@ -140,7 +140,7 @@ export default class ContactForm extends Component {
 						}
 
 						#contact-form .form-field:focus {
-							border-bottom: 3px solid ${theme.colors.primary.light};
+							border-bottom: 3px solid ${theme.colors.primary.main};
 						}
 
 						#contact-form textarea.form-field {
@@ -161,7 +161,7 @@ export default class ContactForm extends Component {
 						}
 
 						#contact-form .submit-btn:hover {
-							background: ${theme.colors.primary.light};
+							background: ${theme.colors.primary.main};
 						}
 					`}
 				</style>

@@ -79,12 +79,12 @@ const Sidebar = props => {
 						display: block;
 						width: 0;
 						height: 2px;
-						background: ${theme.colors.primary.light};
+						background: ${theme.colors.primary.maint};
 						transition: width 0.2s ease;
 					}
 
 					ul li:hover {
-						color: ${theme.colors.primary.light};
+						color: ${theme.colors.primary.maint};
 					}
 
 					ul li:hover::after {

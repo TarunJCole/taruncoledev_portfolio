@@ -93,12 +93,12 @@ const Navbar = props => {
 						display: block;
 						width: 0;
 						height: 2px;
-						background: ${theme.colors.primary.light};
+						background: ${theme.colors.primary.main};
 						transition: width 0.2s ease;
 					}
 
 					.nav-items ul li:hover {
-						color: ${theme.colors.primary.light};
+						color: ${theme.colors.primary.main};
 					}
 
 					.nav-items ul li:hover::after {

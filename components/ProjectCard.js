@@ -76,13 +76,13 @@ const ProjectCard = props => {
 					a {
 						padding: 1rem 2rem;
 						border-radius: 40px;
-						background: ${theme.colors.light};
-						color: ${theme.colors.dark};
+						background: ${theme.colors.dark};
+						color: ${theme.colors.light};
 						transition: background 0.2s ease-in-out;
 					}
 
 					a:hover {
-						background: ${theme.colors.primary.light};
+						background: ${theme.colors.primary.main};
 					}
 
 					a:first-child {

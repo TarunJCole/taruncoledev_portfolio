@@ -36,8 +36,8 @@ const Landing = () => {
 					span.btn {
 						padding: 1rem 2rem;
 						border-radius: 40px;
-						background: ${theme.colors.light};
-						color: ${theme.colors.dark};
+						background: ${theme.colors.dark};
+						color: ${theme.colors.light};
 						transition: background 0.2s ease-in-out;
 					}
 
@@ -46,7 +46,7 @@ const Landing = () => {
 					}
 
 					span.btn:hover {
-						background: ${theme.colors.primary.light};
+						background: ${theme.colors.primary.main};
 					}
 				`}
 			</style>

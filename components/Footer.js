@@ -25,7 +25,7 @@ const Footer = () => {
 						align-items: center;
 						justify-content: center;
 						font-size: 0.9rem;
-						color: ${theme.colors.light};
+						color: ${theme.colors.dark};
 						background: ${theme.colors.background};
 					}
 

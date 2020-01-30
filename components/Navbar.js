@@ -1,6 +1,5 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 
 import theme from "../theme/theme";

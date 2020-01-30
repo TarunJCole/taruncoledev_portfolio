@@ -9,23 +9,17 @@ const Footer = () => {
 				<a href="mailto:tarun@tcwebservices.co.uk">Tarun@tcwebservices.co.uk</a>
 			</div>
 			<div>TC Web Services &copy; 2020</div>
-			<div>
-				<span className="icon-container">
-					Made with <img src="./reactjs-icon.svg" alt="React Icon" className="icon" />
-					<img src="./nodejs-icon.svg" alt="Node Icon" className="icon" />
-					<img src="./zeit-icon.svg" alt="Express Icon" className="icon" />
-				</span>
-			</div>
 			<style jsx>
 				{`
 					footer {
 						display: grid;
 						padding: 0 20%;
-						grid-template-columns: repeat(3, 1fr);
+						grid-template-columns: repeat(2, 1fr);
 						align-items: center;
 						justify-content: center;
 						font-size: 0.9rem;
 						color: ${theme.colors.dark};
+						opacity: 0.75;
 						background: ${theme.colors.background};
 					}
 

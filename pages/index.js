@@ -2,37 +2,26 @@ import React from "react";
 
 import Layout from "../components/Layout";
 import Landing from "../components/Landing";
-import ProjectCard from "../components/ProjectCard";
-import ContactForm from "../components/ContactForm";
 
 import theme from "../theme/theme";
-import projects from "../res/projectInfo";
 
 const Index = () => {
 	return (
 		<Layout title="Home">
 			<Landing />
-			<div>
-				<section id="projects" className="page">
-					<div className="container">
-						<h2>PROJECTS</h2>
-						{projects.map(project => (
-							<ProjectCard project={project} key={project.title} />
-						))}
-					</div>
-				</section>
-				<ContactForm />
+			<div className="container">
+				<div>
+					<h2>
+						Things I Can Do For <span className="primary">You</span>
+					</h2>
+				</div>
 			</div>
+
 			<style jsx>
 				{`
-					h2 {
+					h1 {
 						margin: 4rem 0 6rem 0;
 						font-size: 5rem;
-					}
-
-					#projects .container {
-						display: grid;
-						grid-template-columns: 1fr;
 					}
 				`}
 			</style>

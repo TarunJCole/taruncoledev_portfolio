@@ -59,6 +59,12 @@ const Layout = props => {
 					h2 {
 						font-size: 3.5rem;
 					}
+
+					h1,
+					h2 {
+						text-transform: uppercase;
+					}
+
 					a {
 						text-decoration: none;
 						color: inherit;
@@ -87,6 +93,9 @@ const Layout = props => {
 					.disabled {
 						opacity: 0 !important;
 						pointer-events: none;
+					}
+					.primary {
+						color: ${theme.colors.primary.main};
 					}
 				`}
 			</style>

@@ -6,7 +6,18 @@ import theme from "../theme/theme";
 const Contact = () => {
 	return (
 		<Layout>
-			<h1>Cont</h1>
+			<div className="page">
+				<div className="container">
+					<h1>Want To Talk?</h1>
+				</div>
+			</div>
+			<style jsx>
+				{`
+					h1 {
+						margin-top: 9rem;
+					}
+				`}
+			</style>
 		</Layout>
 	);
 };

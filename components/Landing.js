@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 import theme from "../theme/theme";
 
@@ -13,12 +13,16 @@ const Landing = () => {
 					Web Developer
 				</h1>
 				<div className="title-links">
-					<ScrollLink to="projects" smooth={true}>
-						<span className="btn">See Projects</span>
-					</ScrollLink>
-					<ScrollLink to="contact" smooth={true}>
-						<span className="btn">Contact Me</span>
-					</ScrollLink>
+					<Link href="/projects">
+						<a className="btn" aria-label="See Projects">
+							See Projects
+						</a>
+					</Link>
+					<Link href="/contact">
+						<a className="btn" aria-label="Contact Me">
+							Contact Me
+						</a>
+					</Link>
 				</div>
 			</div>
 			<style jsx>
@@ -33,7 +37,7 @@ const Landing = () => {
 						margin-left: 15%;
 					}
 
-					span.btn {
+					a.btn {
 						padding: 1rem 2rem;
 						border-radius: 40px;
 						background: ${theme.colors.dark};
@@ -41,11 +45,11 @@ const Landing = () => {
 						transition: background 0.2s ease-in-out;
 					}
 
-					span.btn:first-child {
+					a.btn:first-child {
 						margin-right: 2rem;
 					}
 
-					span.btn:hover {
+					a.btn:hover {
 						background: ${theme.colors.primary.main};
 					}
 				`}

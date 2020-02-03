@@ -76,6 +76,7 @@ const About = () => {
 					.about-image img {
 						height: 450px;
 						width: 600px;
+						border-radius: 5px;
 					}
 
 					.about-text {

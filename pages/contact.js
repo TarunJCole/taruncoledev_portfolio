@@ -14,7 +14,7 @@ const Contact = () => {
 			<style jsx>
 				{`
 					h1 {
-						margin-top: 9rem;
+						margin-top: 7rem;
 					}
 				`}
 			</style>

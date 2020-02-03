@@ -11,9 +11,7 @@ const Index = () => {
 			<Landing />
 			<div className="container">
 				<div>
-					<h2>
-						Things I Can Do For <span className="primary">You</span>
-					</h2>
+					<h2>Need an Online Presence?</h2>
 				</div>
 			</div>
 

@@ -12,14 +12,20 @@ const Projects = () => {
 			<section id="projects" className="page">
 				<div className="container">
 					<h1>Things I've Made</h1>
-					{projects.map(project => (
-						<ProjectCard project={project} key={project.title} />
-					))}
+					<div className="grid">
+						{projects.map(project => (
+							<ProjectCard project={project} key={project.title} />
+						))}
+					</div>
 				</div>
 			</section>
 			<style jsx>
 				{`
-					#projects .container {
+					h1 {
+						margin-top: 7rem;
+					}
+
+					#projects .grid {
 						display: grid;
 						grid-template-columns: 1fr;
 					}

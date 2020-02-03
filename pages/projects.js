@@ -8,7 +8,7 @@ import projects from "../res/projectInfo";
 
 const Projects = () => {
 	return (
-		<Layout>
+		<Layout title="Projects">
 			<section id="projects" className="page">
 				<div className="container">
 					<h1>Things I've Made</h1>

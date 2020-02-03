@@ -5,7 +5,7 @@ import theme from "../theme/theme";
 
 const About = () => {
 	return (
-		<Layout>
+		<Layout title="About">
 			<div className="page">
 				<div className="container">
 					<div className="about-container col-2 mt">

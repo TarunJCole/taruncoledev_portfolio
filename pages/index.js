@@ -11,7 +11,9 @@ const Index = () => {
 			<Landing />
 			<div className="container">
 				<div>
-					<h2>Need an Online Presence?</h2>
+					<h2>
+						Need an <span className="primary">Online</span> Presence?
+					</h2>
 				</div>
 			</div>
 

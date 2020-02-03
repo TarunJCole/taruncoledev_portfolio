@@ -8,7 +8,7 @@ const Landing = () => {
 		<section className="container">
 			<div className="title-area">
 				<h1>
-					Tarun Cole
+					<span className="primary">Tarun Cole</span>
 					<br />
 					Web Developer
 				</h1>

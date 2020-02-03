@@ -5,7 +5,7 @@ import theme from "../theme/theme";
 
 const Landing = () => {
 	return (
-		<section>
+		<section className="container">
 			<div className="title-area">
 				<h1>
 					Tarun Cole
@@ -31,10 +31,6 @@ const Landing = () => {
 						min-height: 100vh;
 						display: flex;
 						align-items: center;
-					}
-
-					.title-area {
-						margin-left: 15%;
 					}
 
 					a.btn {

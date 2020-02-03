@@ -5,7 +5,7 @@ import theme from "../theme/theme";
 
 const Contact = () => {
 	return (
-		<Layout title="contact">
+		<Layout title="Contact">
 			<div className="page">
 				<div className="container">
 					<h1>Want To Talk?</h1>

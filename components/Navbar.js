@@ -8,27 +8,29 @@ const Navbar = props => {
 		<header>
 			<nav className="container">
 				<div>
-					<Link href="/">Tarun Cole</Link>
+					<Link href="/">
+						<a aria-label="home">Tarun Cole</a>
+					</Link>
 				</div>
 				<ul>
 					<li>
-						<Link href="/" aria-label="home">
-							<span>Home</span>
+						<Link href="/">
+							<a aria-label="home">Home</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/about" aria-label="about">
-							<span>About</span>
+						<Link href="/about">
+							<a aria-label="about">About</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/projects" aria-label="work">
-							<span>Projects</span>
+						<Link href="/projects">
+							<a aria-label="work">Projects</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/contact" aria-label="contact">
-							<span>Contact</span>
+						<Link href="/contact">
+							<a aria-label="contact">Contact</a>
 						</Link>
 					</li>
 				</ul>
@@ -38,7 +40,7 @@ const Navbar = props => {
 					header {
 						position: fixed;
 						top: 0;
-						width: 100vw;
+						width: 100%;
 					}
 
 					nav {
@@ -60,13 +62,13 @@ const Navbar = props => {
 						margin-right: 0;
 					}
 
-					ul li span {
+					ul li a {
 						padding-bottom: 0.25rem;
 						border-bottom: 2px solid transparent;
 						cursor: pointer;
 					}
 
-					ul li span:hover {
+					ul li a:hover {
 						border-bottom: 2px solid ${theme.colors.primary.main};
 					}
 				`}

@@ -23,15 +23,35 @@ const About = () => {
 					</div>
 					<div className="about-skillset">
 						<h2>Skillset</h2>
-						<div className="about-container col-3">
+						<div className="skill-container col-3">
 							<div>
 								<h3>Front End</h3>
+								<ul>
+									<li>HTML5</li>
+									<li>CSS3 + SASS</li>
+									<li>Javascript</li>
+									<li>React</li>
+									<li>Responsive Design</li>
+									<li>CSS in JS</li>
+								</ul>
 							</div>
 							<div>
 								<h3>Back End</h3>
+								<ul>
+									<li>Node JS</li>
+									<li>Express</li>
+									<li>MongoDB</li>
+									<li>Next JS</li>
+								</ul>
 							</div>
 							<div>
 								<h3>Various</h3>
+								<ul>
+									<li>Git / Github</li>
+									<li>Command Line / CLI</li>
+									<li>Chrome Devtools</li>
+									<li>SEO</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -39,18 +59,29 @@ const About = () => {
 			</div>
 			<style jsx>
 				{`
-					p:first-child {
-						margin-top: 0;
-					}
-
 					h3 {
 						font-size: 2rem;
 						border-bottom: 2px solid ${theme.colors.dark};
 					}
 
+					ul {
+						padding-left: 0;
+					}
+
+					p:first-child {
+						margin-top: 0;
+					}
+
 					.about-container {
 						margin-top: 2rem;
 						height: 450px;
+						display: grid;
+						grid-gap: 3rem;
+					}
+
+					.skill-container {
+						margin-top: 2rem;
+						height: 300px;
 						display: grid;
 						grid-gap: 3rem;
 					}

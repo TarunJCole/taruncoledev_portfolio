@@ -33,6 +33,10 @@ const Landing = () => {
 						align-items: center;
 					}
 
+					div.title-area {
+						margin-bottom: 4rem;
+					}
+
 					a.btn {
 						padding: 1rem 2rem;
 						border-radius: 40px;

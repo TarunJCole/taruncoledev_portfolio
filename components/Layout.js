@@ -97,6 +97,9 @@ const Layout = props => {
 					.primary {
 						color: ${theme.colors.primary.main};
 					}
+					.selected {
+						border-bottom: 2px solid ${theme.colors.primary.main};
+					}
 				`}
 			</style>
 		</>

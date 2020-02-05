@@ -24,7 +24,7 @@ const Layout = props => {
 			<Footer />
 			<style jsx global>
 				{`
-					@import url("https://fonts.googleapis.com/css?family=Lalezar|Rubik&display=swap");
+					@import url("https://fonts.googleapis.com/css?family=Lalezar|Rubik|Josefin+Slab&display=swap");
 					html {
 						box-sizing: border-box;
 					}

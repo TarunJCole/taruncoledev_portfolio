@@ -12,10 +12,7 @@ const Navbar = props => {
 			<nav className="container">
 				<div className="title">
 					<Link href="/">
-						<a aria-label="home">
-							<img src="./favicon.ico" alt="logo" />
-							Tarun Cole
-						</a>
+						<a aria-label="home">TARUN COLE</a>
 					</Link>
 				</div>
 				<ul>
@@ -91,16 +88,17 @@ const Navbar = props => {
 						border-bottom: 2px solid ${theme.colors.primary.main};
 					}
 
+					.title {
+						text-transform: uppercase;
+						font-family: "Josefin Slab", serif;
+						font-size: 1.5rem;
+						margin-top: 0.25rem;
+					}
+
 					.title a {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-					}
-
-					.title a img {
-						margin-right: 0.75rem;
-						border-radius: 50%;
-						border: 1px solid ${theme.colors.dark};
 					}
 				`}
 			</style>

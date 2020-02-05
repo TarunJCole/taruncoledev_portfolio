@@ -8,7 +8,7 @@ const Footer = () => {
 			<div>
 				<a href="mailto:tarun@tcwebservices.co.uk">Tarun@tcwebservices.co.uk</a>
 			</div>
-			<div>TC Web Services &copy; 2020</div>
+			<div>Tarun Cole &copy; 2020</div>
 			<style jsx>
 				{`
 					footer {

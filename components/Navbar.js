@@ -1,36 +1,50 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import theme from "../theme/theme";
 
 const Navbar = props => {
+	const router = useRouter();
+
 	return (
 		<header>
 			<nav className="container">
-				<div>
+				<div className="title">
 					<Link href="/">
-						<a aria-label="home">Tarun Cole</a>
+						<a aria-label="home">
+							<img src="./favicon.ico" alt="logo" />
+							Tarun Cole
+						</a>
 					</Link>
 				</div>
 				<ul>
 					<li>
 						<Link href="/">
-							<a aria-label="home">Home</a>
+							<a aria-label="home" className={router.pathname === "/" ? "selected" : ""}>
+								Home
+							</a>
 						</Link>
 					</li>
 					<li>
 						<Link href="/about">
-							<a aria-label="about">About</a>
+							<a aria-label="about" className={router.pathname === "/about" ? "selected" : ""}>
+								About
+							</a>
 						</Link>
 					</li>
 					<li>
 						<Link href="/projects">
-							<a aria-label="work">Projects</a>
+							<a aria-label="work" className={router.pathname === "/projects" ? "selected" : ""}>
+								Projects
+							</a>
 						</Link>
 					</li>
 					<li>
 						<Link href="/contact">
-							<a aria-label="contact">Contact</a>
+							<a aria-label="contact" className={router.pathname === "/contact" ? "selected" : ""}>
+								Contact
+							</a>
 						</Link>
 					</li>
 				</ul>
@@ -52,6 +66,7 @@ const Navbar = props => {
 
 					nav ul {
 						display: flex;
+						align-items: center;
 					}
 
 					ul li {
@@ -70,6 +85,22 @@ const Navbar = props => {
 
 					ul li a:hover {
 						border-bottom: 2px solid ${theme.colors.primary.main};
+					}
+
+					ul li a.selected {
+						border-bottom: 2px solid ${theme.colors.primary.main};
+					}
+
+					.title a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
+					.title a img {
+						margin-right: 0.75rem;
+						border-radius: 50%;
+						border: 1px solid ${theme.colors.dark};
 					}
 				`}
 			</style>

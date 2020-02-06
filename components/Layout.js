@@ -54,10 +54,11 @@ const Layout = props => {
 						font-family: "Lalezar", sans-serif;
 					}
 					h1 {
-						font-size: 5rem;
+						font-size: 4.5rem;
 					}
 					h2 {
-						font-size: 3.5rem;
+						font-size: 3rem;
+						margin-bottom: 1.5rem;
 					}
 
 					h1,
@@ -82,7 +83,7 @@ const Layout = props => {
 					}
 					.page {
 						max-width: 100vw;
-						min-height: 100vh;
+						min-height: 65vh;
 						background: ${theme.colors.background};
 						margin: 5% 0;
 					}

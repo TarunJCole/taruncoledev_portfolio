@@ -27,6 +27,7 @@ const Layout = props => {
 					@import url("https://fonts.googleapis.com/css?family=Lalezar|Rubik|Josefin+Slab&display=swap");
 					html {
 						box-sizing: border-box;
+						overflow-y: scroll;
 					}
 					*,
 					*:before,

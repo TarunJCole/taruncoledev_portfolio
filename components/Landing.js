@@ -23,6 +23,18 @@ const Landing = () => {
 							Contact Me
 						</a>
 					</Link>
+					<ul>
+						<li>
+							<a href="https://twitter.com/" aria-label="Twitter">
+								<img src="./twitter-official.svg" alt="Twitter Icon" id="twitter-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/TarunJCole?tab=repositories" aria-label="Github">
+								<img src="./github-tile.svg" alt="Github Icon" id="github-icon" />
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<style jsx>
@@ -31,6 +43,10 @@ const Landing = () => {
 						min-height: 100vh;
 						display: flex;
 						align-items: center;
+					}
+
+					h1 {
+						margin: 2rem 0;
 					}
 
 					div.title-area {
@@ -51,6 +67,26 @@ const Landing = () => {
 
 					a.btn:hover {
 						background: ${theme.colors.primary.main};
+					}
+
+					ul {
+						padding: 1rem 0;
+						display: flex;
+					}
+
+					ul img {
+						height: 40px;
+						margin-left: 1rem;
+						opacity: 0.4;
+						transition: opacity 0.3s ease;
+					}
+
+					ul img:hover {
+						opacity: 1;
+					}
+
+					#twitter-icon {
+						margin-left: 0;
 					}
 				`}
 			</style>

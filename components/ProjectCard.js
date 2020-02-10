@@ -45,21 +45,19 @@ const ProjectCard = props => {
 						display: grid;
 						grid-template-columns: auto 1fr;
 						background: none;
-						border-radius: 10px;
-						margin: 4rem 0;
+						margin-bottom: 2rem;
 					}
 
 					.card-img {
 						width: 320px;
 						height: 180px;
 						background: url(${props.project.image}) no-repeat center center/cover;
-						border-radius: 10px 0 0 10px;
 					}
 
 					.card-text {
 						display: flex;
 						flex-direction: column;
-						padding: 1rem 2rem;
+						padding: 0 2rem;
 					}
 
 					.card-text h3 {

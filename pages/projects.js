@@ -14,7 +14,10 @@ const Projects = () => {
 					<h1>Things I've Made</h1>
 					<div className="grid">
 						{projects.map(project => (
-							<ProjectCard project={project} key={project.title} />
+							<div key={project.title}>
+								<ProjectCard project={project} />
+								<hr />
+							</div>
 						))}
 					</div>
 				</div>
@@ -23,6 +26,19 @@ const Projects = () => {
 				{`
 					h1 {
 						margin-top: 7rem;
+					}
+
+					hr {
+						padding: 1px;
+						background: ${theme.colors.dark};
+						border: none;
+						margin: 0 auto 2rem auto;
+						width: 20%;
+					}
+
+					.grid div:last-of-type > hr {
+						padding: 0px;
+						display: none;
 					}
 
 					#projects .grid {

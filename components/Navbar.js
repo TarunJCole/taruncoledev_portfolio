@@ -78,6 +78,7 @@ const Navbar = props => {
 						padding-bottom: 0.25rem;
 						border-bottom: 2px solid transparent;
 						cursor: pointer;
+						transition: border 0.3s ease;
 					}
 
 					ul li a:hover {

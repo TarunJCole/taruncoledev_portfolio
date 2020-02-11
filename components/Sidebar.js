@@ -74,12 +74,12 @@ const Sidebar = props => {
 						cursor: pointer;
 					}
 
-					ul li::after {
+					ul li:after {
 						content: "";
 						display: block;
 						width: 0;
 						height: 2px;
-						background: ${theme.colors.primary.maint};
+						background: ${theme.colors.primary.main};
 						transition: width 0.2s ease;
 					}
 

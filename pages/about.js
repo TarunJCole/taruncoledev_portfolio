@@ -12,12 +12,34 @@ const About = () => {
 						<div className="about-image">
 							<img src="./about-image-gray.jpg" alt="Tarun Cole" />
 						</div>
-						<div className="about-text title-font">
+						<div className="about-text">
 							<p>
-								Hello! My name is <span className="primary">Tarun Cole</span> and I am a web
-								developer from North Wales. I specialize in{" "}
-								<span className="primary">Front-End Development</span> with{" "}
-								<span className="primary">React</span>.
+								<p className="about-text-title title-font">
+									Hello! My name is <span className="primary">Tarun Cole</span> and I am a web
+									developer from North Wales. I specialize in{" "}
+									<span className="primary">Front-End Development</span> with{" "}
+									<span className="primary">React</span>.
+								</p>
+								<p className="about-text-body">
+									<p>
+										I have been enthused and passionate about computing since I was around five
+										years old, when my uncle gave me his old windows 95 machine for my birthday.
+										Hours were spent tinkering with software and games alike!
+									</p>
+									<p>
+										Later in life, I ended up going to university to study chemistry. After
+										completing my degree, I realised that I wanted my career to take a different
+										direction.
+									</p>
+									<p>
+										Re-Igniting my passion for computing, I started learning programming. Eventually
+										I found Javascript and settled on web development.
+									</p>
+									<p>
+										Deciding I wanted to make this my career, I have been learning web development
+										ever since, and I hope to continue improving for years to come!
+									</p>
+								</p>
 							</p>
 						</div>
 					</div>
@@ -111,7 +133,15 @@ const About = () => {
 					}
 
 					.about-text {
-						font-size: 2rem;
+						font-size: 1rem;
+					}
+
+					.about-text-title {
+						font-size: 1.25rem;
+					}
+
+					.about-text-body {
+						opacity: 0.8;
 					}
 
 					.about-skillset {

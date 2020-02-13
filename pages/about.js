@@ -71,7 +71,7 @@ const About = () => {
 								<ul>
 									<li>Git / Github</li>
 									<li>Command Line / CLI</li>
-									<li>Chrome Devtools</li>
+									<li>Devtools</li>
 									<li>SEO</li>
 								</ul>
 							</div>

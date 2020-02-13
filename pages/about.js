@@ -37,7 +37,7 @@ const About = () => {
 									</p>
 									<p>
 										Deciding I wanted to make this my career, I have been learning web development
-										ever since, and I hope to continue improving for years to come!
+										ever since, and I hope to continue improving!
 									</p>
 								</div>
 							</div>

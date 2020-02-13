@@ -33,7 +33,8 @@ const Projects = () => {
 						background: ${theme.colors.dark};
 						border: none;
 						margin: 0 auto 2rem auto;
-						width: 20%;
+						width: 33%;
+						opacity: 0.3;
 					}
 
 					.grid div:last-of-type > hr {

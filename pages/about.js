@@ -13,18 +13,18 @@ const About = () => {
 							<img src="./about-image-gray.jpg" alt="Tarun Cole" />
 						</div>
 						<div className="about-text">
-							<p>
+							<div>
 								<p className="about-text-title title-font">
 									Hello! My name is <span className="primary">Tarun Cole</span> and I am a web
 									developer from North Wales. I specialize in{" "}
 									<span className="primary">Front-End Development</span> with{" "}
 									<span className="primary">React</span>.
 								</p>
-								<p className="about-text-body">
+								<div className="about-text-body">
 									<p>
 										I have been enthused and passionate about computing since I was around five
 										years old, when my uncle gave me his old windows 95 machine for my birthday.
-										Hours were spent tinkering with software and games alike!
+										Tinkering with software and settings was probably my first real hobby.
 									</p>
 									<p>
 										Later in life, I ended up going to university to study chemistry. After
@@ -39,8 +39,8 @@ const About = () => {
 										Deciding I wanted to make this my career, I have been learning web development
 										ever since, and I hope to continue improving for years to come!
 									</p>
-								</p>
-							</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="about-skillset">
@@ -102,7 +102,7 @@ const About = () => {
 					}
 
 					.skill-container {
-						margin-top: 2rem;
+						margin-top: 1rem;
 						height: 300px;
 						display: grid;
 						grid-gap: 3rem;
@@ -127,7 +127,7 @@ const About = () => {
 					}
 
 					.about-image img {
-						height: 450px;
+						height: 100%;
 						width: 600px;
 						border-radius: 5px;
 					}

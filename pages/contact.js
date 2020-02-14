@@ -34,17 +34,18 @@ const Contact = () => {
 			</div>
 			<style jsx>
 				{`
-					h1 {
-						margin-top: 7rem;
+					* {
+						text-align: center;
 					}
 
-					h3 {
-						font-size: 2rem;
+					h1 {
+						margin-top: 7rem;
 					}
 
 					ul {
 						padding-left: 0;
 						display: flex;
+						justify-content: center;
 					}
 
 					ul img {
@@ -54,6 +55,30 @@ const Contact = () => {
 
 					#twitter-icon {
 						margin-left: 0;
+					}
+
+					.page {
+						margin: 0 1rem;
+					}
+
+					@media only screen and (max-width: 800px) {
+						h1 {
+							font-size: 3.5rem;
+						}
+
+						h2 {
+							font-size: 2rem;
+						}
+					}
+
+					@media only screen and (max-width: 550px) {
+						h1 {
+							font-size: 2.5rem;
+						}
+
+						h2 {
+							font-size: 1.2rem;
+						}
 					}
 				`}
 			</style>

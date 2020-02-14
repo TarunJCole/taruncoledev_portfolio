@@ -84,7 +84,7 @@ const Layout = props => {
 					}
 					.page {
 						max-width: 100vw;
-						min-height: 65vh;
+						min-height: 80vh;
 						background: ${theme.colors.background};
 						margin: 5% 0;
 					}

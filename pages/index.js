@@ -9,13 +9,6 @@ const Index = () => {
 	return (
 		<Layout title="Home">
 			<Landing />
-			<div className="container">
-				<div>
-					<h2>
-						Need an <span className="primary">Online</span> Presence?
-					</h2>
-				</div>
-			</div>
 
 			<style jsx>
 				{`

@@ -11,7 +11,9 @@ const Projects = () => {
 		<Layout title="Projects">
 			<section id="projects" className="page">
 				<div className="container">
-					<h1>Things I've Made</h1>
+					<h1>
+						Some of my <span className="primary">Work</span>
+					</h1>
 					<div className="grid">
 						{projects.map(project => (
 							<div key={project.title}>

@@ -55,7 +55,7 @@ const Projects = () => {
 						}
 
 						#projects .grid {
-							margin: 1rem;
+							margin: 3rem 1rem;
 						}
 					}
 				`}

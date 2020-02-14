@@ -86,6 +86,45 @@ const ProjectCard = props => {
 					a:first-child {
 						margin-right: 2rem;
 					}
+
+					@media only screen and (max-width: 700px) {
+						.card {
+							grid-template-columns: 1fr;
+							text-align: center;
+						}
+
+						.card-img {
+							margin: 0 auto;
+							width: 80%;
+						}
+
+						.card-text {
+							padding: 1rem 2rem;
+						}
+
+						.right {
+							align-self: center;
+							justify-self: center;
+						}
+					}
+
+					@media only screen and (max-width: 400px) {
+						.right {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+						}
+
+						a {
+							margin-bottom: 1rem;
+							width: 100%;
+						}
+
+						a:first-child {
+							margin-right: 0;
+						}
+					}
 				`}
 			</style>
 		</div>

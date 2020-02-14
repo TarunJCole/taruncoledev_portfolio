@@ -99,6 +99,16 @@ const Layout = props => {
 					.primary {
 						color: ${theme.colors.primary.main};
 					}
+
+					@media only screen and (max-width: 700px) {
+						h1 {
+							font-size: 3.5rem;
+						}
+						h2 {
+							font-size: 2.5rem;
+							margin-bottom: 1.5rem;
+						}
+					}
 				`}
 			</style>
 		</>

@@ -38,23 +38,23 @@ const Footer = () => {
 					}
 
 					a:hover {
-						color: ${theme.colors.primary.maint};
+						color: ${theme.colors.primary.main};
 					}
 
-					.icon-container {
-						display: flex;
-						justify-content: center;
-						align-items: center;
+					@media only screen and (max-width: 700px) {
+						footer {
+							padding: 0 1rem;
+						}
+
+						footer div {
+							padding: 1rem 2rem;
+						}
 					}
 
-					img.icon {
-						margin: 0 0.25rem;
-						width: 16px;
-						height: 16px;
-					}
-
-					img.icon:first-child {
-						margin-left: 0.75rem;
+					@media only screen and (max-width: 400px) {
+						footer {
+							grid-template-columns: 1fr;
+						}
 					}
 				`}
 			</style>

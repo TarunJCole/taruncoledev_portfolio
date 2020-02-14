@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Overlay from "./Overlay";
 import Sidebar from "./Sidebar";
 
 import theme from "../theme/theme";
@@ -17,9 +16,8 @@ const Layout = props => {
 				<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 				<title>{`${props.title} | TC Web Services`}</title>
 			</Head>
-			<Navbar toggleSidebar={setDisplaySidebar} displaySidebar={displaySidebar} />
+			<Navbar setDisplaySidebar={setDisplaySidebar} displaySidebar={displaySidebar} />
 			<Sidebar displaySidebar={displaySidebar} />
-			<Overlay displaySidebar={displaySidebar} />
 			{props.children}
 			<Footer />
 			<style jsx global>
@@ -98,6 +96,9 @@ const Layout = props => {
 					}
 					.primary {
 						color: ${theme.colors.primary.main};
+					}
+					.light {
+						background-color: ${theme.colors.light};
 					}
 
 					@media only screen and (max-width: 700px) {

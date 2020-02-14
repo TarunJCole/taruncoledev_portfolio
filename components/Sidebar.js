@@ -1,42 +1,56 @@
 import React, { useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 import theme from "../theme/theme";
 
 const Sidebar = props => {
+	const router = useRouter();
+
 	useEffect(() => {
 		if (props.displaySidebar) {
-			document.querySelector(".sidebar").classList.remove("disabled");
+			document.querySelector(".sidebar").classList.remove("hidden");
 		} else {
-			document.querySelector(".sidebar").classList.add("disabled");
+			document.querySelector(".sidebar").classList.add("hidden");
 		}
 	});
 
 	return (
-		<nav className="sidebar disabled">
+		<nav className="sidebar hidden">
 			<ul>
 				<li>
-					<ScrollLink to="__next" smooth={true}>
-						<span>Home</span>
-					</ScrollLink>
+					<Link href="/">
+						<a aria-label="home" className={router.pathname === "/" ? "selected" : ""}>
+							Home
+						</a>
+					</Link>
 				</li>
 				<li>
-					<ScrollLink to="about" smooth={true}>
-						<span>About Me</span>
-					</ScrollLink>
+					<Link href="/about">
+						<a aria-label="about" className={router.pathname === "/about" ? "selected" : ""}>
+							About
+						</a>
+					</Link>
 				</li>
 				<li>
-					<ScrollLink to="projects" smooth={true}>
-						<span>Projects</span>
-					</ScrollLink>
+					<Link href="/projects">
+						<a aria-label="work" className={router.pathname === "/projects" ? "selected" : ""}>
+							Projects
+						</a>
+					</Link>
 				</li>
 				<li>
-					<ScrollLink to="contact" smooth={true}>
-						<span>Contact</span>
-					</ScrollLink>
+					<Link href="/contact">
+						<a aria-label="contact" className={router.pathname === "/contact" ? "selected" : ""}>
+							Contact
+						</a>
+					</Link>
 				</li>
 			</ul>
 			<ul>
+				<li>
+					<a href="https://www.twitter.com">Twitter</a>
+				</li>
 				<li>
 					<a href="https://github.com/TarunJCole">Github</a>
 				</li>
@@ -51,12 +65,12 @@ const Sidebar = props => {
 						position: fixed;
 						top: 0;
 						right: 0;
-						background: ${theme.colors.dark};
+						background: #2b2b2bdd;
 						height: 100vh;
-						width: 25%;
+						width: 100%;
 						min-width: 320px;
-						z-index: 100;
-						transition: opacity 0.2s ease-in-out;
+						z-index: 50;
+						transition: transform 0.3s ease-in-out;
 					}
 
 					ul {
@@ -74,21 +88,12 @@ const Sidebar = props => {
 						cursor: pointer;
 					}
 
-					ul li:after {
-						content: "";
-						display: block;
-						width: 0;
-						height: 2px;
-						background: ${theme.colors.primary.main};
-						transition: width 0.2s ease;
+					ul li a.selected {
+						border-bottom: 2px solid ${theme.colors.primary.light};
 					}
 
-					ul li:hover {
-						color: ${theme.colors.primary.maint};
-					}
-
-					ul li:hover::after {
-						width: 100%;
+					.hidden {
+						transform: translateY(-100vh);
 					}
 				`}
 			</style>

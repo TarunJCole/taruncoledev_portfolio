@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-export const Hamburger = () => {
+import theme from "../theme/theme";
+
+const Hamburger = props => {
+	useEffect(() => {
+		if (props.displaySidebar) {
+			document.querySelectorAll(".hamburger-line").forEach(line => line.classList.add("light"));
+		} else {
+			document.querySelectorAll(".hamburger-line").forEach(line => line.classList.remove("light"));
+		}
+	});
+
 	return (
-		<div className="hamburger disabled" onClick={() => props.toggleSidebar(!props.displaySidebar)}>
+		<div className="hamburger" onClick={() => props.setDisplaySidebar(!props.displaySidebar)}>
 			<div className="hamburger-line"></div>
 			<div className="hamburger-line"></div>
 			<div className="hamburger-line"></div>
@@ -16,14 +26,9 @@ export const Hamburger = () => {
 						cursor: pointer;
 						width: 60px;
 						height: 60px;
-						background: ${theme.colors.secondary.light};
 						border-radius: 50%;
 						transition: background 0.2s ease-in-out;
-						z-index: 100;
-					}
-
-					.hamburger:hover {
-						color: ${theme.colors.primary.main};
+						z-index: 75;
 					}
 
 					.hamburger-line {
@@ -32,9 +37,16 @@ export const Hamburger = () => {
 						background-color: ${theme.colors.dark};
 						margin: 3px 0;
 						border-radius: 3px;
+						transition: background 0.3s ease-in-out;
+					}
+
+					.light {
+						background-color: ${theme.colors.light};
 					}
 				`}
 			</style>
 		</div>
 	);
 };
+
+export default Hamburger;

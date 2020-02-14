@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import theme from "../theme/theme";
+import Hamburger from "./Hamburger";
 
 const Navbar = props => {
 	const router = useRouter();
@@ -45,6 +46,12 @@ const Navbar = props => {
 						</Link>
 					</li>
 				</ul>
+				<div className="hamburger-container">
+					<Hamburger
+						displaySidebar={props.displaySidebar}
+						setDisplaySidebar={props.setDisplaySidebar}
+					/>
+				</div>
 			</nav>
 			<style jsx>
 				{`
@@ -52,6 +59,7 @@ const Navbar = props => {
 						position: fixed;
 						top: 0;
 						width: 100%;
+						z-index: 75;
 					}
 
 					nav {
@@ -100,6 +108,26 @@ const Navbar = props => {
 						display: flex;
 						align-items: center;
 						justify-content: center;
+					}
+
+					.hamburger-container {
+						display: none;
+					}
+
+					@media only screen and (max-width: 1150px) {
+						header {
+							padding: 0 1rem;
+						}
+					}
+
+					@media only screen and (max-width: 700px) {
+						nav ul {
+							display: none;
+						}
+
+						.hamburger-container {
+							display: block;
+						}
 					}
 				`}
 			</style>

@@ -147,6 +147,48 @@ const About = () => {
 					.about-skillset {
 						margin-top: 7.5rem;
 					}
+
+					@media only screen and (max-width: 1050px) {
+						h3 {
+							width: 50%;
+							margin: 1rem auto;
+						}
+
+						.mt {
+							margin-top: 7.5rem;
+						}
+
+						.col-2 {
+							grid-template-columns: 1fr;
+						}
+
+						.col-3 {
+							grid-template-columns: 1fr;
+						}
+
+						.about-container {
+							height: auto;
+							grid-template-columns: 1fr;
+						}
+
+						.about-image img {
+							width: 80%;
+						}
+
+						.about-text {
+							text-align: center;
+							margin: 0 10%;
+						}
+
+						.about-skillset {
+							text-align: center;
+						}
+
+						.skill-container {
+							height: auto;
+							grid-gap: 1rem;
+						}
+					}
 				`}
 			</style>
 		</Layout>

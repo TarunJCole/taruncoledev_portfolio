@@ -88,6 +88,27 @@ const Landing = () => {
 					#twitter-icon {
 						margin-left: 0;
 					}
+
+					@media only screen and (max-width: 1250px) {
+						section {
+							justify-content: center;
+						}
+					}
+
+					@media only screen and (max-width: 650px) {
+						section {
+							text-align: center;
+						}
+
+						ul {
+							display: flex;
+							justify-content: center;
+						}
+
+						h1 {
+							font-size: 3rem;
+						}
+					}
 				`}
 			</style>
 		</section>

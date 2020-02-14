@@ -21,6 +21,7 @@ const Footer = () => {
 						color: ${theme.colors.dark};
 						opacity: 0.75;
 						background: ${theme.colors.background};
+						overflow-x: hidden;
 					}
 
 					footer div {

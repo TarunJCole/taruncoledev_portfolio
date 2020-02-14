@@ -145,7 +145,7 @@ const About = () => {
 					}
 
 					.about-skillset {
-						margin-top: 5rem;
+						margin-top: 7.5rem;
 					}
 				`}
 			</style>

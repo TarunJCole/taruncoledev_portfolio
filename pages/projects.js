@@ -48,6 +48,16 @@ const Projects = () => {
 						display: grid;
 						grid-template-columns: 1fr;
 					}
+
+					@media only screen and (max-width: 1250px) {
+						h1 {
+							text-align: center;
+						}
+
+						#projects .grid {
+							margin: 1rem;
+						}
+					}
 				`}
 			</style>
 		</Layout>

@@ -15,6 +15,14 @@ const Layout = props => {
 			<Head>
 				<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 				<title>{`${props.title} | TC Web Services`}</title>
+				<meta
+					name="description"
+					content="Hello! My name is Tarun Cole and I am a web developer from North Wales. I specialize in Front-End Development with React."
+				/>
+				<meta
+					name="keywords"
+					content="Web,Website,React,Front-End,Developer,Javascript,Design,Tarun,Cole,Nodejs"
+				/>
 			</Head>
 			<Navbar setDisplaySidebar={setDisplaySidebar} displaySidebar={displaySidebar} />
 			<Sidebar displaySidebar={displaySidebar} />

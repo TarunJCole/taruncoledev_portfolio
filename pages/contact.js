@@ -19,12 +19,16 @@ const Contact = () => {
 					<div>
 						<ul>
 							<li>
-								<a href="https://twitter.com/" aria-label="Twitter">
+								<a href="https://twitter.com/" aria-label="Twitter" rel="noreferrer">
 									<img src="./twitter-official.svg" alt="Twitter Icon" id="twitter-icon" />
 								</a>
 							</li>
 							<li>
-								<a href="https://github.com/TarunJCole?tab=repositories" aria-label="Github">
+								<a
+									href="https://github.com/TarunJCole?tab=repositories"
+									aria-label="Github"
+									rel="noreferrer"
+								>
 									<img src="./github-tile.svg" alt="Github Icon" id="github-icon" />
 								</a>
 							</li>

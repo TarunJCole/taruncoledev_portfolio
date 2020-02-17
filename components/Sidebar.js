@@ -49,7 +49,7 @@ const Sidebar = props => {
 			</ul>
 			<ul>
 				<li>
-					<a href="https://www.twitter.com">Twitter</a>
+					<a href="https://www.twitter.com/taruncoledev">Twitter</a>
 				</li>
 				<li>
 					<a href="https://github.com/TarunJCole">Github</a>

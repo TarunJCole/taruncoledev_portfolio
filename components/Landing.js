@@ -25,7 +25,7 @@ const Landing = () => {
 					</Link>
 					<ul>
 						<li>
-							<a href="https://twitter.com/" aria-label="Twitter" rel="noreferrer">
+							<a href="https://twitter.com/taruncoledev" aria-label="Twitter" rel="noreferrer">
 								<img src="./twitter-official.svg" alt="Twitter Icon" id="twitter-icon" />
 							</a>
 						</li>

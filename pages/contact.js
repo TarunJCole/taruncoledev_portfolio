@@ -14,7 +14,7 @@ const Contact = () => {
 						Get in touch with me at
 					</h1>
 					<div>
-						<h2>Tarun@tcwebservices.co.uk</h2>
+						<h2>Tarun@taruncoledev.co.uk</h2>
 					</div>
 					<div>
 						<ul>

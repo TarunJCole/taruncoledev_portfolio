@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<div>
-				<a href="mailto:tarun@tcwebservices.co.uk">Tarun@tcwebservices.co.uk</a>
+				<a href="mailto:tarun@taruncoledev.co.uk">Tarun@taruncoledev.co.uk</a>
 			</div>
 			<div>Tarun Cole &copy; 2020</div>
 			<style jsx>

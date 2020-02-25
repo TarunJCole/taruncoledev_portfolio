@@ -30,7 +30,7 @@ const Layout = props => {
 			<Footer />
 			<style jsx global>
 				{`
-					@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans|Rubik|Josefin+Slab&display=swap");
+					@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Rubik|Josefin+Slab&display=swap");
 					html {
 						box-sizing: border-box;
 						overflow-y: scroll;
@@ -58,7 +58,7 @@ const Layout = props => {
 					h3,
 					.title-font {
 						font-weight: normal;
-						font-family: "Black Han Sans", sans-serif;
+						font-family: "Archivo Black", sans-serif;
 					}
 					h1 {
 						font-size: 4.5rem;

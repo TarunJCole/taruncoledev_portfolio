@@ -14,7 +14,7 @@ const About = () => {
 						</div>
 						<div className="about-text">
 							<div>
-								<p className="about-text-title title-font">
+								<p className="about-text-title">
 									Hello! My name is <span className="primary">Tarun Cole</span> and I am a web
 									developer from North Wales. I specialize in{" "}
 									<span className="primary">Front-End Development</span> with{" "}

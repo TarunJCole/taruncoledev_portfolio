@@ -140,10 +140,6 @@ const About = () => {
 						font-size: 1.25rem;
 					}
 
-					.about-text-body {
-						opacity: 0.8;
-					}
-
 					.about-skillset {
 						margin-top: 7.5rem;
 					}

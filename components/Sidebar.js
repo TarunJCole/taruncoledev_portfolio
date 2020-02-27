@@ -70,7 +70,7 @@ const Sidebar = props => {
 						width: 100%;
 						min-width: 320px;
 						z-index: 50;
-						transition: transform 0.3s ease-in-out;
+						transition: transform 0.5s ease-out;
 					}
 
 					ul {
